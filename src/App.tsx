@@ -3,6 +3,7 @@ import MyLearning from './MyLearning';
 import ProblemSolving from './ProblemSolving';
 import WrongNotes from './WrongNotes';
 import SimilarQuestions from './SimilarQuestions';
+import LearningGuide from './LearningGuide';
 import './main-home.css';
 import {
   ArrowRight,
@@ -53,6 +54,7 @@ function App() {
   if (path === '/problem-solving') return <ProblemSolving onNavigate={navigate} />;
   if (path === '/wrong-notes') return <WrongNotes onNavigate={navigate} />;
   if (path === '/similar-questions') return <SimilarQuestions onNavigate={navigate} />;
+  if (path === '/learning-guide') return <LearningGuide onNavigate={navigate} />;
 
   return (
     <div className="page-shell">
