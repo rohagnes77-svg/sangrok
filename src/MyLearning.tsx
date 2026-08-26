@@ -87,7 +87,7 @@ function MyLearning({ onNavigate }: { onNavigate: Navigate }) {
             <SidebarLink icon={Target} label="유사문제 훈련" onClick={() => notify('유사문제 훈련 화면을 준비하고 있습니다.')} />
             <SidebarLink icon={Mic} label="구술시험" onClick={() => notify('구술시험 화면을 준비하고 있습니다.')} />
             <SidebarLink icon={BarChart3} label="나의 학습" active onClick={() => setMobileSidebarOpen(false)} />
-            <SidebarLink icon={FileText} label="학습 가이드" onClick={() => notify('학습 가이드를 준비하고 있습니다.')} />
+            <SidebarLink icon={FileText} label="학습 가이드" onClick={() => onNavigate('/learning-guide')} />
           </nav>
           <div className="recommend-box">
             <h3>AI가 추천하는<br />오늘의 학습</h3>

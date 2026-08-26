@@ -3,6 +3,7 @@ import MyLearning from './MyLearning';
 import ProblemSolving from './ProblemSolving';
 import WrongNotes from './WrongNotes';
 import SimilarQuestions from './SimilarQuestions';
+import LearningGuide from './LearningGuide';
 import './main-home.css';
 import {
   ArrowRight,
@@ -28,9 +29,10 @@ const features: Feature[] = [
   { title: '유사문제 훈련', description: '같은 개념의 유사 문제로\n반복 학습하세요!', tone: 'purple', icon: RefreshCw },
   { title: '구술시험', description: '자주 나오는 구술 질문을\n연습하고 답변을 녹음하세요.', tone: 'green', icon: Mic },
   { title: '나의 학습', description: '실전 감각을 키우고\n시험을 자신 있게 준비하세요.', tone: 'orange', icon: BarChart3 },
+  { title: '학습 가이드', description: '시험 준비 전략과 학습 팁을\n확인하고 효율적으로 공부하세요.', tone: 'sky', icon: Bot },
 ];
 
-const featureRoutes: Record<string, string> = { 문제풀기: '/problem-solving', 오답노트: '/wrong-notes', '유사문제 훈련': '/similar-questions', '나의 학습': '/my-learning' };
+const featureRoutes: Record<string, string> = { 문제풀기: '/problem-solving', 오답노트: '/wrong-notes', '유사문제 훈련': '/similar-questions', '나의 학습': '/my-learning', '학습 가이드': '/learning-guide' };
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -53,6 +55,7 @@ function App() {
   if (path === '/problem-solving') return <ProblemSolving onNavigate={navigate} />;
   if (path === '/wrong-notes') return <WrongNotes onNavigate={navigate} />;
   if (path === '/similar-questions') return <SimilarQuestions onNavigate={navigate} />;
+  if (path === '/learning-guide') return <LearningGuide onNavigate={navigate} />;
 
   return (
     <div className="page-shell">

@@ -59,7 +59,7 @@ const questions: Question[] = [
   { number: 20, title: '건강 체력 요소에 해당하지 않는 것은?', options: ['심폐지구력', '근력', '유연성', '신체조성', '경기 전략'], answer: 4, explanation: '건강 체력의 주요 요소는 심폐지구력, 근력, 근지구력, 유연성, 신체조성입니다.' },
 ];
 
-const menuRoutes: Record<string, string> = { 홈: '/', 문제풀기: '/problem-solving', 오답노트: '/wrong-notes', '유사문제 훈련': '/similar-questions', '나의 학습': '/my-learning' };
+const menuRoutes: Record<string, string> = { 홈: '/', 문제풀기: '/problem-solving', 오답노트: '/wrong-notes', '유사문제 훈련': '/similar-questions', '나의 학습': '/my-learning', '학습 가이드': '/learning-guide' };
 const menuItems = [
   { label: '홈', icon: Home },
   { label: '문제풀기', icon: BookOpen, active: true },
